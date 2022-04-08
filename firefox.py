@@ -12,7 +12,6 @@ import time
  
 class Browser():
     def __init__(self, url, show=True) -> None:
-        # self.URL = "https://www.youtube.com/watch?v=f6aLOYb8HAE&list=PLN_DIJJJ8men451hJpo4MhO7Sxgk_yS4Y&index=2&ab_channel=Akintoye-Topic"
         self.URL = url
 
         options = Options()
