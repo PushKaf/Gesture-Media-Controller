@@ -102,5 +102,5 @@ class Browser():
         self.firefox.close()
 
 if __name__ == '__main__':
-    x = Browser()
+    x = Browser("https://www.youtube.com/watch?v=-thh5_bpGGY&list=RD-thh5_bpGGY&start_radio=1")
     x.scrub(20)

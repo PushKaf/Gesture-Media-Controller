@@ -167,8 +167,6 @@ def main(url, showBrowser=True, showFeed=True):
                         curIndexPosX = lineInfo[2]
                         print("Cur:",curIndexPosX, "Prev:",prevIndexPosX, "Prev-Cur:",prevIndexPosX-curIndexPosX)
 
-
-
                 colorVol, end = fingerContol(img, fingersUp, browser, volPer, lineInfo, colorVol, end)
 
         #------------------------------------------------
@@ -201,5 +199,5 @@ if __name__ == '__main__':
     volMin = volume.GetVolumeRange()[0]
     volMax = volume.GetVolumeRange()[1]
 
-    url = "https://www.youtube.com/watch?v=HB76Ydx8msk&list=PLN_DIJJJ8men451hJpo4MhO7Sxgk_yS4Y&index=1&ab_channel=SteezyTracks"
-    main(url, showBrowser=False)
+    url = "https://www.youtube.com/watch?v=-thh5_bpGGY&list=RD-thh5_bpGGY&start_radio=1"
+    main(url, showBrowser=True)
