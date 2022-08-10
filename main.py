@@ -182,9 +182,7 @@ def main(url, showBrowser=True, showFeed=True):
 
         if showFeed:
             cv2.imshow("Video Feed", img)
-
-        # cv2.waitKey(1)
-
+            
         if cv2.waitKey(1) and end:
             #display the min, max, and avg fps in the console
             cv2.destroyAllWindows()

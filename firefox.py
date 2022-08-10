@@ -9,7 +9,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
- 
 class Browser():
     def __init__(self, url, show=True) -> None:
         self.URL = url
@@ -75,26 +74,6 @@ class Browser():
 
             self.startTime = time.time()
 
-    def scrub(self, sTime):
-        #WIP, i cant get it to work at all
-
-        # BAR_CLASS = "ytp-progress-bar"
-        # SCRUB_CLASS = "ytp-scrubber-container"
-
-        # pgrsSlider = self.firefox.find_element(By.CLASS_NAME, BAR_CLASS)
-        # print(pgrsSlider.size)
-
-        # time.sleep(20)
-
-        # scrubCnt = self.firefox.find_element(By.CLASS_NAME, SCRUB_CLASS)
-
-        # print(scrubCnt.get_attribute("style"))
-
-
-        # ActionChains(self.firefox).click_and_hold(scrubCnt).move_by_offset(30, 0)
-        # time.sleep(10)
-        # print(scrubCnt.get_attribute("style"))
-        pass
     def switchToTab(self, tabNum):
         self.firefox.switch_to.window(self.firefox.window_handles[tabNum])
 

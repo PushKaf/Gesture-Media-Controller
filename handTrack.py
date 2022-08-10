@@ -97,12 +97,6 @@ class Hand():
 
         return fingers
 
-    # def lineTrack(self):
-    #     lineLen = 0;
-
-    #     if self.fingersUp[1] == 0:
-
-
 def main():
     pTime = 0
     cTime = 0
@@ -114,9 +108,6 @@ def main():
         img = dectector.findHands(img)
         handLMs = dectector.findPosition(img)
 
-        # if len(handLMs) != 0 :
-        #   print(handLMs[4], handLMs[8])
-
         cTime = time.time()
         fps = int(1/(cTime-pTime))
         pTime = cTime
@@ -127,7 +118,6 @@ def main():
 
         if cv2.waitKey(1) & 0xFF == 27:
             break
-
 
 if __name__ == '__main__':
     main()
