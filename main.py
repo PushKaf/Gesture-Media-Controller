@@ -31,7 +31,8 @@ def fingerContol(img, fingersUp : list, browser : fx.Browser, volPer : int, line
         browser.play()
 
     if fingersUp[1] == 0:
-        browser.scrub()
+        #COMMING SOON
+        #browser.scrub()
 
     #if the middle finger is down
     if fingersUp[2] == 0:
